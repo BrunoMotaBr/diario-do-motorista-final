@@ -6,15 +6,15 @@
         <div>
             <x-input-label for="name" :value="__('Name')" />
             <x-text-input id="name" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" placeholder="Seu nome" />
-            <x-input-error :messages="$errors->get('name')"/>
         </div>
+        <x-input-error :messages="$errors->get('name')" style="padding: 0 15px" />
 
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input placeholder="seu@email.com" id="email" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" />
         </div>
+        <x-input-error :messages="$errors->get('email')" style="padding: 0 15px" />
 
         <!-- Password -->
         <div class="mt-4">
@@ -25,9 +25,8 @@
                             type="password"
                             name="password"
                             required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
+        <x-input-error :messages="$errors->get('password')" class="mt-2" style="padding: 0 15px"/>
 
         <!-- Confirm Password -->
         <div class="mt-4">
@@ -36,9 +35,8 @@
             <x-text-input id="password_confirmation"
                             type="password"
                             name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
+        <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" style="padding: 0 15px" />
 
         <div class="flex items-center justify-end mt-4">
             <a class="link-text" href="{{ route('login') }}">

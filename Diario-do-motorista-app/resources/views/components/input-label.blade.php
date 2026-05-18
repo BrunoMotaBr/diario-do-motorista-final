@@ -1,12 +1,12 @@
-@props(['value'])
+@props(['value', 'color' => '--text-primary'])
 
-<label class="input-label">
+<label class="input-label" style="color: var({{$color}})" ;>
     {{ $value ?? $slot }}
 </label>
 
 <style>
     .input-label{
         font-size: 16px;
-        color: var(--text-primary);
+        font-weight: 700;
     }
 </style>

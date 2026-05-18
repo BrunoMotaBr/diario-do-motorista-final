@@ -10,8 +10,9 @@
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" placeholder="seu@email.com" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
+        <x-input-error :messages="$errors->get('email')" class="mt-2" style="padding: 0 15px" />
+
 
         <!-- Password -->
         <div>
@@ -21,9 +22,9 @@
                             type="password"
                             name="password"
                             required autocomplete="current-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
+        <x-input-error :messages="$errors->get('password')" class="mt-2" style="padding: 0 15px" />
+
 
         <!-- Remember Me -->
         <div class="block mt-4">

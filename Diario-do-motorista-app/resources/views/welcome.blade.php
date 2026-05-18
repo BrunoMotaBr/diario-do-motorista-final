@@ -20,5 +20,6 @@
         @endif
     </head>
     <body>
+        <x-navigationOff/>
     </body>
 </html>

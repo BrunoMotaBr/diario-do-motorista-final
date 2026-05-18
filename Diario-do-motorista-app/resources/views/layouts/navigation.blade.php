@@ -19,6 +19,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('registro.create')" :active="request()->routeIs('registro.create')">
+                        {{ __('Ganhos do dia') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('registro-gastos.create')" :active="request()->routeIs('registro-gastos.create')">
+                        {{ __('Gastos') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -53,6 +59,12 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('registro.create')" :active="request()->routeIs('registro.create')">
+                {{ __('Ganhos do dia') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('registro-gastos.create')" :active="request()->routeIs('registro-gastos.create')">
+                {{ __('Gastos') }}
             </x-responsive-nav-link>
         </div>
 

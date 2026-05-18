@@ -14,7 +14,7 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
+    <body style="overflow: hidden">
         <div
             class="guest-principal"
         >
@@ -24,12 +24,6 @@
         </div>
     </body>
     <style>
-        .i{
-            position: absolute;
-            z-index: 0;
-            object-fit: cover;
-            object-position: center;
-        }
         .sombra-bg{
             position: absolute;
             z-index: -10;
